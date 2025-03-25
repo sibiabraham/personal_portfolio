@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: normal;
+  font-style: normal;
+  src: url('/src/common/fonts') format('ttf');
+}
+
+@font-face {
+  font-family: Manrope;
+  font-weight: normal;
+  font-style: normal;
+  src: url('/src/common/fonts') format('ttf');
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: normal;
+  font-style: normal;
+  src: url('/src/common/fonts') format('otf');
+}
+
+@theme {
+  /* Font Initialise */
+  --font-quicksand: 'Quicksand';
+  --font-manrope: 'Manrope';
+  --font-inter: 'Inter';
+
+  /* Breakpoint Initialise */
+  --breakpoint-xxs: 20rem;
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-1xl: 90rem;
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 100rem;
+
+  /* Container Initialise */
+  --container-3xs: 16rem;
+  --container-2xs: 18rem;
+  --container-xs: 20rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-lg: 32rem;
+  --container-xl: 36rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --container-6xl: 72rem;
+  --container-7xl: 80rem;
+
+  /* Spacing Initialise */
+  --spacing-gutter-mobile: 16px;
+  --spacing-gutter-desktop: 36px;
+  --spacing-small-grid: 32px;
+  --spacing-large-grid: 28px;
+  --spacing-bg-height: 1080px;
+  --spacing-lg: 700px;
+  --spacing-md: 600px;
+  --spacing-sm: 500px;
+
+  /* Color Initialise */
+  --color-page-background: #007dfc;
+
+  /* Shadow Initialise */
+  --shadow-card: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+}
+
+/* Light Mode */
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #121212;
+  --text-color: #fff;
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
